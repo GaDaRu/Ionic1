@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-grid >
+    <ion-row>
+      <ion-col><ion-button color="dark" expand="block"><span id="number">0</span></ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button color="light" expand="block" (click)="add('1')">1</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('2')">2</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('3')">3</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button color="light" expand="block" (click)="add('4')">4</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('5')">5</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('6')">6</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button color="light" expand="block" (click)="add('7')">7</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('8')">8</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('9')">9</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button color="light" expand="block" (click)="add('*')">*</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('0')">0</ion-button></ion-col>
+      <ion-col><ion-button color="light" expand="block" (click)="add('#')">#</ion-button></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col><ion-button color="success" expand="block" (click)="call()" href="www.google.es"><ion-icon name="call-outline"></ion-icon></ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+</ion-content>

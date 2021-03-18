@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+    <ion-buttons>
+      <ion-button (click)="deleteItem()" color="danger">
+        <ion-icon slot="icon-only" name="trash"></ion-icon>
+      </ion-button>
+      <ion-button (click)="addEditItem()">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+</ion-header>
+
+<ion-content [fullscreen]="false" (loadstart)="onLoad()">
+  <ion-app>
+    <div class="ion-page" id="content">
+      <ion-content>
+        <ion-tabs>
+          <ion-tab>
+            <ion-list lines="full">
+
+            </ion-list>
+          </ion-tab>
+        </ion-tabs>
+      </ion-content>
+    </div>
+  </ion-app>
+</ion-content>

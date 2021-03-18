@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pruebaionic-cadd6": {
+      "hosting": {
+        "app": [
+          "pruebaionic-cadd6"
+        ]
+      }
+    }
+  }
+}
