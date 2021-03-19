@@ -27,11 +27,7 @@ export class PhotoService {
 
     Storage.set({
       key: this.PHOTO_STORAGE,
-      value: JSON.stringify(this.photos.map(p => {
-        const photoCopy = {...p};
-        delete photoCopy.base64;
-        return photoCopy;
-      }))
+      value: JSON.stringify(this.photos)
     });
   }
 

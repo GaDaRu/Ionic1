@@ -42,10 +42,7 @@ export class Tab3Page {
              </ion-label>
           </ion-item>
           <ion-item-options side="start">
-            <!--<ion-button (click)="deleteItem(` + index + `)" color="danger">
-                <ion-icon slot="icon-only" name="trash"></ion-icon>
-            </ion-button>-->
-            <ion-item-option (click)="deleteItem(` + index + `)" color="danger">
+            <ion-item-option  color="danger" (click)="deleteItem(` + index + `)">
                 <ion-icon slot="icon-only" name="trash"></ion-icon>
             </ion-item-option>
           </ion-item-options>

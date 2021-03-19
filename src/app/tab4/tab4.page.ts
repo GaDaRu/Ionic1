@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-tab4',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class Tab4Page {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   public setResult(value) {
     document.getElementById('number').innerHTML = value;
@@ -24,6 +25,8 @@ export class Tab4Page {
   }
 
   public call(){
+    window.open('tel:' + this.getResult(), '_system');
     this.setResult(0);
+    this.router.navigate(['/admin']);
   }
 }
